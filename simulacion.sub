@@ -1,0 +1,11 @@
+universe 	= docker
+docker_image	= recad/matplotlib
+executable 	= /bin/bash
+arguments	= Run.sh 	
+should_transfer_files   = YES
+transfer_input_files    = Run.sh,persona.py,poblacion.py,Run.py
+when_to_transfer_output = ON_EXIT
+output                  = out.fitting.$(Process).txt
+error                   = err.fitting.$(Process).txt
+log                     = log.fitting.$(Process).txt
+queue 1
