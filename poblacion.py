@@ -12,9 +12,9 @@ class Poblacion(object):
     Origen=False
 
     #Constructor de la clase donde recibe si dicha poblacion es el origen o no de la infección, y su nombre
-    def __init__(self, origen,name):
-        self.numColumnas = random.randrange(16, 80)
-        self.numFilas = random.randrange(16, 70)
+    def __init__(self, origen,name,col):
+        self.numColumnas = random.randrange(16, col)
+        self.numFilas = random.randrange(16, col)
         self.Origen=origen
         self.name = name
 

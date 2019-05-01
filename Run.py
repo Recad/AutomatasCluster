@@ -60,9 +60,9 @@ class formulario():
 
 		if self.ValidarDatos():
 
-			self.poblaci = Poblacion(True, "pobla1")
-			self.poblaci2 = Poblacion(False, "pobla2")
-			self.poblaci3 = Poblacion(False, "pobla3")
+			self.poblaci = Poblacion(True, "pobla1",int(sys.argv[13]))
+			self.poblaci2 = Poblacion(False, "pobla2",int(sys.argv[14]))
+			self.poblaci3 = Poblacion(False, "pobla3",int(sys.argv[15]))
 			self.poblaci.poblar(self.DefProbabilidades(self.IndiceP1))
 			self.poblaci2.poblar(self.DefProbabilidades(self.IndiceP2))
 			self.poblaci3.poblar(self.DefProbabilidades(self.IndiceP3))
